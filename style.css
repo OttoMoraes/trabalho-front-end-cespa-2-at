@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.tela{
+    width:390px;
+    height:844px;
+    background:linear-gradient(180deg,#0048ff,#0038d8);
+    position:relative;
+    overflow:hidden;
+    color:#fff;
+}
+
+/* Barra superior */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px;
+    z-index:2;
+    position:relative;
+}
+
+.logo{
+    width:42px;
+}
+
+.icons i{
+    margin-left:18px;
+    font-size:22px;
+}
+
+/* Faixa clara */
+
+.shape{
+    position:absolute;
+    right:-100px;
+    top:70px;
+
+    width:320px;
+    height:650px;
+
+    background:rgba(255,255,255,.22);
+
+    transform:skew(-28deg);
+
+    border-radius:20px;
+}
+
+/* Texto */
+
+.texto{
+    margin-top:150px;
+    padding:0 25px;
+    position:relative;
+}
+
+.texto h1{
+    font-size:52px;
+    line-height:58px;
+    font-weight:700;
+}
+
+/* Card */
+
+.card{
+    position:absolute;
+    left:20px;
+    right:20px;
+    bottom:150px;
+
+    background:white;
+    border-radius:16px;
+
+    color:#333;
+
+    display:flex;
+    align-items:center;
+
+    padding:12px;
+}
+
+.foto{
+    width:55px;
+    height:55px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+.info{
+    margin-left:12px;
+    flex:1;
+}
+
+.info strong{
+    font-size:18px;
+}
+
+.info p{
+    margin-top:4px;
+    color:#777;
+    font-size:13px;
+}
+
+.card i{
+    font-size:25px;
+    color:#0048ff;
+}
+
+/* Trocar conta */
+
+.trocar{
+    position:absolute;
+    left:25px;
+    bottom:110px;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    color:white;
+    font-size:17px;
+}
+
+/* Rodapé */
+
+.footer{
+    position:absolute;
+    width:100%;
+    bottom:35px;
+
+    text-align:center;
+    font-size:17px;
+}
+
+.footer i{
+    margin-top:10px;
+    font-size:18px;
+}
